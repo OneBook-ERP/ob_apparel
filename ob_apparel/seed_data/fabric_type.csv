@@ -1,0 +1,10 @@
+fabric_type_code,fabric_type_name,category,default_relaxation_hours
+SJ,Single Jersey,Knit,24.0
+RIB11,1x1 Rib,Knit,24.0
+RIB22,2x2 Rib,Knit,24.0
+INTL,Interlock Knit,Knit,24.0
+FLC2T,2-Thread Fleece,Knit,36.0
+FLC3T,3-Thread Fleece,Knit,36.0
+LYC_SJ,Cotton Lycra Jersey,Knit,48.0
+TWILL,Cotton Twill 2/1,Woven,12.0
+DENIM,Indigo Denim 3/1,Woven,12.0

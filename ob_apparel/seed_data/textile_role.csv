@@ -1,0 +1,7 @@
+role_code,role_name,can_override_qc_hold,can_approve_cut_plan
+CUT_MASTER,Cutting Master,0,1
+PATTERN_MASTER,Pattern Master,0,1
+QC_INLINE,Inline QC Inspector,0,0
+QC_AUDITOR,Final AQL Auditor,1,0
+STENTER_OPR,Stenter Machine Operator,0,0
+SEW_SUPERVISOR,Sewing Line Supervisor,0,0

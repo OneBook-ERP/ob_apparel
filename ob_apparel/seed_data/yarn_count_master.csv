@@ -1,0 +1,12 @@
+count_code,count_name,count_system,nominal_value
+20S_NE,20s Ne Carded Weft,English Cotton Count (Ne),20.0
+24S_NE,24s Ne Combed Hosiery,English Cotton Count (Ne),24.0
+30S_NE,30s Ne Combed Hosiery,English Cotton Count (Ne),30.0
+34S_NE,34s Ne Combed Warp,English Cotton Count (Ne),34.0
+40S_NE,40s Ne Compact Combed,English Cotton Count (Ne),40.0
+60S_NE,60s Ne Superfine Combed,English Cotton Count (Ne),60.0
+80S_NE,80s Ne Giza Compact,English Cotton Count (Ne),80.0
+75D_POLY,75 Denier Polyester Filament,Denier (D),75.0
+150D_POLY,150 Denier Textured Poly,Denier (D),150.0
+30D_SPDX,30 Denier Bare Spandex,Denier (D),30.0
+20_TEX,20 Tex Open-End Yarn,Tex,20.0

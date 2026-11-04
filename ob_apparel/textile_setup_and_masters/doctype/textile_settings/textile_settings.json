@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "creation": "2026-11-04 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_section",
+  "auto_roll_barcode",
+  "roll_barcode_prefix",
+  "bundle_barcode_prefix",
+  "column_break_gen",
+  "min_relaxation_hours",
+  "weight_tolerance_percentage",
+  "astm_section",
+  "astm_penalty_1pt_max_inches",
+  "astm_penalty_2pt_max_inches",
+  "astm_penalty_3pt_max_inches",
+  "column_break_astm",
+  "continuous_defect_threshold_meters",
+  "grade_a_max_points",
+  "grade_b_max_points"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_section",
+   "fieldtype": "Section Break",
+   "label": "General Textile Parameters"
+  },
+  {
+   "fieldname": "auto_roll_barcode",
+   "fieldtype": "Check",
+   "label": "Auto-Generate Roll Barcode",
+   "default": "1"
+  },
+  {
+   "fieldname": "roll_barcode_prefix",
+   "fieldtype": "Data",
+   "label": "Roll Barcode Prefix",
+   "default": "ROLL-"
+  },
+  {
+   "fieldname": "bundle_barcode_prefix",
+   "fieldtype": "Data",
+   "label": "Bundle Barcode Prefix",
+   "default": "BNDL-"
+  },
+  {
+   "fieldname": "column_break_gen",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "min_relaxation_hours",
+   "fieldtype": "Float",
+   "label": "Minimum Relaxation Hours",
+   "default": "24.0",
+   "reqd": 1
+  },
+  {
+   "fieldname": "weight_tolerance_percentage",
+   "fieldtype": "Percent",
+   "label": "Weight Tolerance %",
+   "default": "3.0",
+   "reqd": 1
+  },
+  {
+   "fieldname": "astm_section",
+   "fieldtype": "Section Break",
+   "label": "ASTM D5430 4-Point Inspection Defaults"
+  },
+  {
+   "fieldname": "astm_penalty_1pt_max_inches",
+   "fieldtype": "Float",
+   "label": "1-Point Max Defect Length (Inches)",
+   "default": "3.0"
+  },
+  {
+   "fieldname": "astm_penalty_2pt_max_inches",
+   "fieldtype": "Float",
+   "label": "2-Point Max Defect Length (Inches)",
+   "default": "6.0"
+  },
+  {
+   "fieldname": "astm_penalty_3pt_max_inches",
+   "fieldtype": "Float",
+   "label": "3-Point Max Defect Length (Inches)",
+   "default": "9.0"
+  },
+  {
+   "fieldname": "column_break_astm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "continuous_defect_threshold_meters",
+   "fieldtype": "Float",
+   "label": "Continuous Defect Halt Threshold (Meters)",
+   "default": "3.0"
+  },
+  {
+   "fieldname": "grade_a_max_points",
+   "fieldtype": "Float",
+   "label": "Grade A Max Points / 100 sq yd",
+   "default": "28.0",
+   "reqd": 1
+  },
+  {
+   "fieldname": "grade_b_max_points",
+   "fieldtype": "Float",
+   "label": "Grade B Max Points / 100 sq yd",
+   "default": "40.0",
+   "reqd": 1
+  }
+ ],
+ "issingle": 1,
+ "istable": 0,
+ "modified": "2026-11-04 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Setup and Masters",
+ "name": "Textile Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "role": "System Manager"
+  }
+ ]
+}

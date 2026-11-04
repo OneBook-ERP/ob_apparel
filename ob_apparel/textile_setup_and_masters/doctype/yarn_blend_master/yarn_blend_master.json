@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "autoname": "field:blend_code",
+ "creation": "2026-11-04 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "blend_code",
+  "blend_name",
+  "is_active",
+  "components_section",
+  "components"
+ ],
+ "fields": [
+  {
+   "fieldname": "blend_code",
+   "fieldtype": "Data",
+   "label": "Blend Code",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "blend_name",
+   "fieldtype": "Data",
+   "label": "Blend Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active",
+   "default": "1",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "components_section",
+   "fieldtype": "Section Break",
+   "label": "Fibre Composition (Must Sum to 100%)"
+  },
+  {
+   "fieldname": "components",
+   "fieldtype": "Table",
+   "label": "Components",
+   "options": "Yarn Blend Item",
+   "reqd": 1
+  }
+ ],
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-11-04 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Setup and Masters",
+ "name": "Yarn Blend Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "delete": 1,
+   "role": "System Manager"
+  }
+ ]
+}

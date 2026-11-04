@@ -1,0 +1,7 @@
+shade_code,shade_name,pantone_code,hex_color,dye_class
+SHD-001,Navy Blue,19-4010 TCX,#0A1172,Reactive
+SHD-002,Jet Black,19-0303 TCX,#101820,Reactive
+SHD-003,Optical White,11-0601 TCX,#FFFFFF,Direct
+SHD-004,Crimson Red,19-1761 TCX,#9E1030,Reactive
+SHD-005,Olive Drab,18-0527 TCX,#5B6334,Reactive
+SHD-006,Charcoal Melange,19-3908 TCX,#474B4E,Reactive

@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "autoname": "field:machine_code",
+ "creation": "2026-11-04 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "machine_code",
+  "machine_name",
+  "machine_type",
+  "machine_barcode",
+  "column_break_mm",
+  "capacity_per_shift",
+  "capacity_uom",
+  "workstation",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "machine_code",
+   "fieldtype": "Data",
+   "label": "Machine Code",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "machine_name",
+   "fieldtype": "Data",
+   "label": "Machine Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "machine_type",
+   "fieldtype": "Select",
+   "label": "Machine Type",
+   "options": "Circular Knitting\nFlat Knitting\nStenter Frame\nSoft Flow Dyeing\nSpreading Table\nAutomatic Cutter\nSewing Line\nFinishing Steam Iron",
+   "default": "Circular Knitting",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "machine_barcode",
+   "fieldtype": "Data",
+   "label": "Machine Barcode",
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_mm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "capacity_per_shift",
+   "fieldtype": "Float",
+   "label": "Capacity / Shift",
+   "precision": "2",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "capacity_uom",
+   "fieldtype": "Link",
+   "label": "Capacity UOM",
+   "options": "Textile UOM"
+  },
+  {
+   "fieldname": "workstation",
+   "fieldtype": "Link",
+   "label": "ERPNext Workstation",
+   "options": "Workstation"
+  },
+  {
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active",
+   "default": "1"
+  }
+ ],
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-11-04 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Setup and Masters",
+ "name": "Machine Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "delete": 1,
+   "role": "System Manager"
+  }
+ ]
+}

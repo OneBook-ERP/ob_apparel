@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "autoname": "field:construction_code",
+ "creation": "2026-11-04 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "construction_code",
+  "construction_name",
+  "fabric_type",
+  "structure_type",
+  "column_break_fc",
+  "theoretical_gsm",
+  "tolerance_gsm_percent",
+  "woven_section",
+  "warp_count",
+  "weft_count",
+  "epi",
+  "ppi",
+  "column_break_wov",
+  "reed_count",
+  "knit_section",
+  "wales_per_inch",
+  "courses_per_inch",
+  "column_break_knt",
+  "gauge",
+  "loop_length_mm",
+  "components_section",
+  "yarn_components"
+ ],
+ "fields": [
+  {
+   "fieldname": "construction_code",
+   "fieldtype": "Data",
+   "label": "Construction Code",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "construction_name",
+   "fieldtype": "Data",
+   "label": "Construction Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "fabric_type",
+   "fieldtype": "Link",
+   "label": "Fabric Type",
+   "options": "Fabric Type",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "structure_type",
+   "fieldtype": "Select",
+   "label": "Structure Type",
+   "options": "Knit\nWoven",
+   "default": "Knit",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_fc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "theoretical_gsm",
+   "fieldtype": "Float",
+   "label": "Theoretical GSM",
+   "precision": "2",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "tolerance_gsm_percent",
+   "fieldtype": "Percent",
+   "label": "GSM Tolerance %",
+   "default": "5.0"
+  },
+  {
+   "fieldname": "woven_section",
+   "fieldtype": "Section Break",
+   "label": "Woven Construction Parameters",
+   "depends_on": "eval:doc.structure_type==\"Woven\""
+  },
+  {
+   "fieldname": "warp_count",
+   "fieldtype": "Link",
+   "label": "Warp Count",
+   "options": "Yarn Count Master"
+  },
+  {
+   "fieldname": "weft_count",
+   "fieldtype": "Link",
+   "label": "Weft Count",
+   "options": "Yarn Count Master"
+  },
+  {
+   "fieldname": "epi",
+   "fieldtype": "Float",
+   "label": "Ends Per Inch (EPI)"
+  },
+  {
+   "fieldname": "ppi",
+   "fieldtype": "Float",
+   "label": "Picks Per Inch (PPI)"
+  },
+  {
+   "fieldname": "column_break_wov",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reed_count",
+   "fieldtype": "Data",
+   "label": "Reed Count"
+  },
+  {
+   "fieldname": "knit_section",
+   "fieldtype": "Section Break",
+   "label": "Knit Construction Parameters",
+   "depends_on": "eval:doc.structure_type==\"Knit\""
+  },
+  {
+   "fieldname": "wales_per_inch",
+   "fieldtype": "Float",
+   "label": "Wales Per Inch (WPI)"
+  },
+  {
+   "fieldname": "courses_per_inch",
+   "fieldtype": "Float",
+   "label": "Courses Per Inch (CPI)"
+  },
+  {
+   "fieldname": "column_break_knt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gauge",
+   "fieldtype": "Data",
+   "label": "Gauge (GG)"
+  },
+  {
+   "fieldname": "loop_length_mm",
+   "fieldtype": "Float",
+   "label": "Loop Length (mm)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "components_section",
+   "fieldtype": "Section Break",
+   "label": "Yarn Components"
+  },
+  {
+   "fieldname": "yarn_components",
+   "fieldtype": "Table",
+   "label": "Yarn Components",
+   "options": "Fabric Construction Item"
+  }
+ ],
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-11-04 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Setup and Masters",
+ "name": "Fabric Construction",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "delete": 1,
+   "role": "System Manager"
+  }
+ ]
+}

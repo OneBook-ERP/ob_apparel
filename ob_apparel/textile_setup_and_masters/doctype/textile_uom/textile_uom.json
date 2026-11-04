@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "autoname": "field:uom_code",
+ "creation": "2026-11-04 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "uom_code",
+  "uom_name",
+  "uom_type",
+  "column_break_tu",
+  "precision",
+  "erpnext_uom"
+ ],
+ "fields": [
+  {
+   "fieldname": "uom_code",
+   "fieldtype": "Data",
+   "label": "UOM Code",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "uom_name",
+   "fieldtype": "Data",
+   "label": "UOM Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "uom_type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Weight\nLength\nPackage / Count\nVolume",
+   "default": "Package / Count",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_tu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "precision",
+   "fieldtype": "Int",
+   "label": "Precision",
+   "default": "3",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "erpnext_uom",
+   "fieldtype": "Link",
+   "label": "ERPNext UOM",
+   "options": "UOM"
+  }
+ ],
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-11-04 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Setup and Masters",
+ "name": "Textile UOM",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "delete": 1,
+   "role": "System Manager"
+  }
+ ]
+}

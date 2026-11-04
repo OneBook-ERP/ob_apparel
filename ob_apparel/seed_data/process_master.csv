@@ -1,0 +1,7 @@
+process_code,process_name,process_stage,wet_or_dry,standard_loss_cap_percent
+SCOUR,Scouring & Bleaching,Fabric Wet Processing,Wet,2.0
+DYE_REACT,Reactive Dyeing,Fabric Wet Processing,Wet,3.0
+DYE_DISP,Disperse Dyeing,Fabric Wet Processing,Wet,2.5
+STENTER,Stentering & Heat Setting,Fabric Finishing,Dry,1.0
+COMPACT,Felt Compacting,Fabric Finishing,Dry,0.5
+BIO_WASH,Enzyme Bio-Washing,Fabric Wet Processing,Wet,2.0

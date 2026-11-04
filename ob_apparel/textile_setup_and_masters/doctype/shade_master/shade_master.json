@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "autoname": "field:shade_code",
+ "creation": "2026-11-04 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "shade_code",
+  "shade_name",
+  "pantone_code",
+  "column_break_sm",
+  "hex_color",
+  "dye_class",
+  "buyer"
+ ],
+ "fields": [
+  {
+   "fieldname": "shade_code",
+   "fieldtype": "Data",
+   "label": "Shade Code",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "shade_name",
+   "fieldtype": "Data",
+   "label": "Shade Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "pantone_code",
+   "fieldtype": "Data",
+   "label": "Pantone Code (TCX/TPX)",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_sm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hex_color",
+   "fieldtype": "Color",
+   "label": "Color Hex",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "dye_class",
+   "fieldtype": "Select",
+   "label": "Dye Class",
+   "options": "Reactive\nDisperse\nVat\nDirect\nAcid\nPigment",
+   "default": "Reactive",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "buyer",
+   "fieldtype": "Link",
+   "label": "Buyer / Customer",
+   "options": "Customer"
+  }
+ ],
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-11-04 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Setup and Masters",
+ "name": "Shade Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "delete": 1,
+   "role": "System Manager"
+  }
+ ]
+}

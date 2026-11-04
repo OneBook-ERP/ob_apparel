@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "autoname": "field:shift_code",
+ "creation": "2026-11-04 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "shift_code",
+  "shift_name",
+  "is_active",
+  "column_break_shm",
+  "start_time",
+  "end_time",
+  "break_duration_minutes",
+  "working_hours",
+  "erpnext_shift_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "shift_code",
+   "fieldtype": "Data",
+   "label": "Shift Code",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "shift_name",
+   "fieldtype": "Data",
+   "label": "Shift Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active",
+   "default": "1",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_shm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "break_duration_minutes",
+   "fieldtype": "Int",
+   "label": "Break (Minutes)",
+   "default": "30"
+  },
+  {
+   "fieldname": "working_hours",
+   "fieldtype": "Float",
+   "label": "Working Hours",
+   "read_only": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "erpnext_shift_type",
+   "fieldtype": "Link",
+   "label": "ERPNext Shift Type",
+   "options": "Shift Type"
+  }
+ ],
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-11-04 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Setup and Masters",
+ "name": "Shift Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "delete": 1,
+   "role": "System Manager"
+  }
+ ]
+}

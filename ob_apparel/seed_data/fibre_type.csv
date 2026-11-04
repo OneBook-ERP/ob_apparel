@@ -1,0 +1,8 @@
+fibre_code,fibre_name,fibre_category,density_g_cm3,standard_moisture_regain_percent,hs_code
+COT,100% Shankar-6 Cotton,Natural,1.54,8.5,5201
+POLY,Polyester Staple Fibre,Synthetic,1.38,0.4,5503
+VIS,Viscose Rayon Staple,Regenerated,1.52,11.0,5504
+MOD,MicroModal Fibre,Regenerated,1.51,12.5,5504
+ELAS,Spandex / Elastane,Synthetic,1.2,1.5,5402
+LIN,Flax Linen,Natural,1.5,12.0,5301
+RPOLY,Recycled Polyester Staple,Synthetic,1.38,0.4,5503

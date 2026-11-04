@@ -1,0 +1,10 @@
+uom_code,uom_name,uom_type,precision
+ROLL,Fabric Roll,Package / Count,0
+CONE,Yarn Cone,Package / Count,0
+BALE,Cotton Bale,Package / Count,0
+THAN,Fabric Than,Length,2
+MTR,Meter,Length,3
+YD,Yard,Length,3
+KG,Kilogram,Weight,3
+DZN,Dozen,Package / Count,0
+PCS,Pieces,Package / Count,0

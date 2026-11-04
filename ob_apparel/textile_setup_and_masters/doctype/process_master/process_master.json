@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "autoname": "field:process_code",
+ "creation": "2026-11-04 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "process_code",
+  "process_name",
+  "process_stage",
+  "column_break_pm",
+  "wet_or_dry",
+  "standard_loss_cap_percent",
+  "default_operation"
+ ],
+ "fields": [
+  {
+   "fieldname": "process_code",
+   "fieldtype": "Data",
+   "label": "Process Code",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "process_name",
+   "fieldtype": "Data",
+   "label": "Process Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "process_stage",
+   "fieldtype": "Select",
+   "label": "Stage",
+   "options": "Yarn Processing\nFabric Wet Processing\nFabric Finishing\nGarment Processing",
+   "default": "Fabric Wet Processing",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_pm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wet_or_dry",
+   "fieldtype": "Select",
+   "label": "Wet / Dry",
+   "options": "Wet\nDry",
+   "default": "Wet",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "standard_loss_cap_percent",
+   "fieldtype": "Percent",
+   "label": "Std Loss Cap %",
+   "default": "2.0",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "default_operation",
+   "fieldtype": "Link",
+   "label": "ERPNext Operation",
+   "options": "Operation"
+  }
+ ],
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-11-04 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Setup and Masters",
+ "name": "Process Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "delete": 1,
+   "role": "System Manager"
+  }
+ ]
+}
