@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "creation": "2026-11-05 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "roll_barcode",
+  "fabric_item",
+  "fabric_lot",
+  "net_weight_kg",
+  "length_meters",
+  "measured_gsm",
+  "cuttable_width_cm",
+  "rack_location"
+ ],
+ "fields": [
+  {
+   "fieldname": "roll_barcode",
+   "fieldtype": "Data",
+   "label": "Roll Barcode",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "fabric_item",
+   "fieldtype": "Link",
+   "label": "Fabric Item",
+   "options": "Fabric Item",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "fabric_lot",
+   "fieldtype": "Link",
+   "label": "Fabric Lot",
+   "options": "Fabric Lot",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "net_weight_kg",
+   "fieldtype": "Float",
+   "label": "Net Wt (kg)",
+   "reqd": 1,
+   "precision": "3",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "length_meters",
+   "fieldtype": "Float",
+   "label": "Length (m)",
+   "reqd": 1,
+   "precision": "2",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "measured_gsm",
+   "fieldtype": "Float",
+   "label": "GSM",
+   "precision": "2",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "cuttable_width_cm",
+   "fieldtype": "Float",
+   "label": "Width (cm)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "rack_location",
+   "fieldtype": "Data",
+   "label": "Rack",
+   "in_list_view": 1
+  }
+ ],
+ "issingle": 0,
+ "istable": 1,
+ "modified": "2026-11-05 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Fabric and Roll Control",
+ "name": "Fabric Roll Item",
+ "owner": "Administrator",
+ "permissions": []
+}

@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "autoname": "RVA-.YYYY.-.#####",
+ "creation": "2026-11-05 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "fabric_roll",
+  "previous_grade",
+  "downgraded_grade",
+  "column_break_rva",
+  "original_rate_per_kg",
+  "devalued_rate_per_kg",
+  "variance_amount",
+  "reason",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "default": "Today",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "fabric_roll",
+   "fieldtype": "Link",
+   "label": "Fabric Roll",
+   "options": "Fabric Roll",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "previous_grade",
+   "fieldtype": "Select",
+   "label": "Previous Grade",
+   "options": "Grade A\nGrade B",
+   "default": "Grade A",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "downgraded_grade",
+   "fieldtype": "Select",
+   "label": "Downgraded Grade",
+   "options": "Grade B\nGrade C / Seconds\nScrap",
+   "default": "Grade B",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_rva",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "original_rate_per_kg",
+   "fieldtype": "Float",
+   "label": "Original Rate / kg",
+   "reqd": 1,
+   "precision": "2",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "devalued_rate_per_kg",
+   "fieldtype": "Float",
+   "label": "Devalued Rate / kg",
+   "reqd": 1,
+   "precision": "2",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "variance_amount",
+   "fieldtype": "Float",
+   "label": "Variance Loss",
+   "read_only": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason for Devaluation"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Roll Valuation Adjustment",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-11-05 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Fabric and Roll Control",
+ "name": "Roll Valuation Adjustment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "submit": 1,
+   "cancel": 1,
+   "role": "System Manager"
+  }
+ ]
+}

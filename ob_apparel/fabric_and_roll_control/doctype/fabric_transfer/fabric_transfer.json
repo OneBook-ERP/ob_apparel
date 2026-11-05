@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "autoname": "FTRF-.YYYY.-.#####",
+ "creation": "2026-11-05 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "from_warehouse",
+  "to_warehouse",
+  "column_break_ftrf",
+  "purpose",
+  "target_rack_location",
+  "rolls_section",
+  "rolls",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "default": "Today",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "from_warehouse",
+   "fieldtype": "Link",
+   "label": "From Warehouse",
+   "options": "Warehouse",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "to_warehouse",
+   "fieldtype": "Link",
+   "label": "To Warehouse",
+   "options": "Warehouse",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_ftrf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "label": "Purpose",
+   "options": "Relocation\nMove to Relaxation\nMove to QC Inspection\nIssue to Cutting Table\nReturn to Store",
+   "default": "Relocation",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "target_rack_location",
+   "fieldtype": "Data",
+   "label": "Target Rack Location"
+  },
+  {
+   "fieldname": "rolls_section",
+   "fieldtype": "Section Break",
+   "label": "Transferred Rolls"
+  },
+  {
+   "fieldname": "rolls",
+   "fieldtype": "Table",
+   "label": "Rolls",
+   "options": "Fabric Roll Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Fabric Transfer",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-11-05 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Fabric and Roll Control",
+ "name": "Fabric Transfer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "submit": 1,
+   "cancel": 1,
+   "role": "System Manager"
+  }
+ ]
+}

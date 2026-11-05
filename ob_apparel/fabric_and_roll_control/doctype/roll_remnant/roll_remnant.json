@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "autoname": "REM-.YYYY.-.#####",
+ "creation": "2026-11-05 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "original_roll",
+  "fabric_item",
+  "column_break_rem",
+  "remnant_length_meters",
+  "remnant_weight_kg",
+  "action",
+  "remnant_warehouse",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "default": "Today",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "original_roll",
+   "fieldtype": "Link",
+   "label": "Original Fabric Roll",
+   "options": "Fabric Roll",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "fabric_item",
+   "fieldtype": "Link",
+   "label": "Fabric Item",
+   "options": "Fabric Item",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_rem",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remnant_length_meters",
+   "fieldtype": "Float",
+   "label": "Remnant Length (m)",
+   "reqd": 1,
+   "precision": "2",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "remnant_weight_kg",
+   "fieldtype": "Float",
+   "label": "Remnant Net Wt (kg)",
+   "reqd": 1,
+   "precision": "3",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Select",
+   "label": "Action",
+   "options": "Salvage Valuation\nScrap\nPatchwork Store",
+   "default": "Salvage Valuation",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "remnant_warehouse",
+   "fieldtype": "Link",
+   "label": "Remnant Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Roll Remnant",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-11-05 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Fabric and Roll Control",
+ "name": "Roll Remnant",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "submit": 1,
+   "cancel": 1,
+   "role": "System Manager"
+  }
+ ]
+}

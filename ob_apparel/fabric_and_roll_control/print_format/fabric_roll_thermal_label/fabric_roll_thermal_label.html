@@ -1,0 +1,105 @@
+<style>
+  @page {
+    size: 100mm 50mm;
+    margin: 1mm;
+  }
+  .label-container {
+    width: 98mm;
+    height: 48mm;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding: 2mm;
+    color: #000;
+  }
+  .label-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.5px solid #000;
+    padding-bottom: 1mm;
+    margin-bottom: 1.5mm;
+    font-size: 8pt;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  .label-body {
+    display: flex;
+    justify-content: space-between;
+  }
+  .col-left {
+    width: 58%;
+    font-size: 7.5pt;
+    line-height: 1.35;
+  }
+  .col-right {
+    width: 40%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .big-stat {
+    font-size: 14pt;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+  .barcode-text {
+    font-family: monospace;
+    font-size: 10pt;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: #000;
+    color: #fff;
+    padding: 1px 4px;
+    display: inline-block;
+    margin-bottom: 2px;
+  }
+  .grade-badge {
+    border: 2px solid #000;
+    padding: 1px 6px;
+    font-size: 9pt;
+    font-weight: bold;
+    display: inline-block;
+  }
+  .label-footer {
+    border-top: 1px dashed #000;
+    margin-top: 2mm;
+    padding-top: 1mm;
+    font-size: 6.5pt;
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
+
+<div class="label-container">
+  <div class="label-header">
+    <span>ONEBOOK APPAREL &bull; FABRIC CONTROL</span>
+    <span class="grade-badge">{{ doc.qc_grade or "QUARANTINE" }}</span>
+  </div>
+
+  <div class="label-body">
+    <div class="col-left">
+      <div class="barcode-text">{{ doc.roll_barcode }}</div>
+      <div><b>Item:</b> {{ doc.fabric_item }}</div>
+      <div><b>Lot:</b> {{ doc.fabric_lot or "N/A" }}</div>
+      <div><b>Rack:</b> {{ doc.rack_location or "RACK-GEN" }}</div>
+      <div><b>Whse:</b> {{ doc.current_warehouse or "Raw Fabric Store" }}</div>
+    </div>
+
+    <div class="col-right">
+      <div>
+        <div style="font-size: 6.5pt; text-transform: uppercase;">Net Weight</div>
+        <div class="big-stat">{{ doc.net_weight_kg }} <span style="font-size: 8pt;">KG</span></div>
+      </div>
+      <div>
+        <div style="font-size: 7.5pt;"><b>{{ doc.length_meters }} M</b> &bull; <b>{{ doc.measured_gsm }} GSM</b></div>
+        <div style="font-size: 6.5pt;">Width: {{ doc.cuttable_width_cm }} cm</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="label-footer">
+    <span>Genealogy Root: {{ doc.root_roll_id or doc.name }}</span>
+    <span>Status: {{ doc.status }}</span>
+  </div>
+</div>

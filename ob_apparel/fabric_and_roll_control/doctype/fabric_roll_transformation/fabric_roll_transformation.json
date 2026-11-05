@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "autoname": "FTRN-.YYYY.-.#####",
+ "creation": "2026-11-05 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "transformation_type",
+  "parent_roll",
+  "column_break_ftrn",
+  "parent_weight_kg",
+  "parent_length_meters",
+  "cutting_loss_kg",
+  "child_rolls_section",
+  "child_rolls",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "default": "Today",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "transformation_type",
+   "fieldtype": "Select",
+   "label": "Transformation Type",
+   "options": "Roll Split\nRoll Merge\nRemnant Creation",
+   "default": "Roll Split",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "parent_roll",
+   "fieldtype": "Link",
+   "label": "Parent Roll",
+   "options": "Fabric Roll",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_ftrn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "parent_weight_kg",
+   "fieldtype": "Float",
+   "label": "Parent Net Wt (kg)",
+   "precision": "3",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "parent_length_meters",
+   "fieldtype": "Float",
+   "label": "Parent Length (m)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cutting_loss_kg",
+   "fieldtype": "Float",
+   "label": "Cutting End Loss (kg)",
+   "default": "0.000",
+   "precision": "3"
+  },
+  {
+   "fieldname": "child_rolls_section",
+   "fieldtype": "Section Break",
+   "label": "Generated Child Rolls"
+  },
+  {
+   "fieldname": "child_rolls",
+   "fieldtype": "Table",
+   "label": "Child Rolls",
+   "options": "Fabric Roll Split Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Fabric Roll Transformation",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-11-05 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Fabric and Roll Control",
+ "name": "Fabric Roll Transformation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "submit": 1,
+   "cancel": 1,
+   "role": "System Manager"
+  }
+ ]
+}

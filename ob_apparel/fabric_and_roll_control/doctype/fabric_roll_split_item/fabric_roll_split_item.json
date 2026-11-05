@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "creation": "2026-11-05 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "child_barcode",
+  "net_weight_kg",
+  "length_meters",
+  "measured_gsm",
+  "cuttable_width_cm",
+  "allocated_grade"
+ ],
+ "fields": [
+  {
+   "fieldname": "child_barcode",
+   "fieldtype": "Data",
+   "label": "Child Roll Barcode",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "net_weight_kg",
+   "fieldtype": "Float",
+   "label": "Net Wt (kg)",
+   "reqd": 1,
+   "precision": "3",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "length_meters",
+   "fieldtype": "Float",
+   "label": "Length (m)",
+   "reqd": 1,
+   "precision": "2",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "measured_gsm",
+   "fieldtype": "Float",
+   "label": "GSM",
+   "precision": "2",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "cuttable_width_cm",
+   "fieldtype": "Float",
+   "label": "Width (cm)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "allocated_grade",
+   "fieldtype": "Select",
+   "label": "Grade",
+   "options": "Grade A\nGrade B\nGrade C / Seconds",
+   "default": "Grade A",
+   "in_list_view": 1
+  }
+ ],
+ "issingle": 0,
+ "istable": 1,
+ "modified": "2026-11-05 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Fabric and Roll Control",
+ "name": "Fabric Roll Split Item",
+ "owner": "Administrator",
+ "permissions": []
+}

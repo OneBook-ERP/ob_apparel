@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "autoname": "field:roll_barcode",
+ "creation": "2026-11-05 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "roll_barcode",
+  "fabric_item",
+  "fabric_lot",
+  "status",
+  "qc_grade",
+  "column_break_fr",
+  "gross_weight_kg",
+  "tare_weight_kg",
+  "net_weight_kg",
+  "length_meters",
+  "measured_gsm",
+  "cuttable_width_cm",
+  "location_section",
+  "current_warehouse",
+  "rack_location",
+  "column_break_loc",
+  "genealogy_section",
+  "parent_roll_id",
+  "root_roll_id",
+  "erpnext_serial_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "roll_barcode",
+   "fieldtype": "Data",
+   "label": "Roll Barcode",
+   "reqd": 1,
+   "unique": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "fabric_item",
+   "fieldtype": "Link",
+   "label": "Fabric Item",
+   "options": "Fabric Item",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "fabric_lot",
+   "fieldtype": "Link",
+   "label": "Fabric Lot",
+   "options": "Fabric Lot",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Quarantine\nAvailable\nReserved\nIn Spreading\nConsumed\nRemnant\nScrapped",
+   "default": "Quarantine",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "qc_grade",
+   "fieldtype": "Select",
+   "label": "QC Grade",
+   "options": "Quarantine\nGrade A\nGrade B\nGrade C / Seconds\nRejected",
+   "default": "Quarantine",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_fr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gross_weight_kg",
+   "fieldtype": "Float",
+   "label": "Gross Weight (kg)",
+   "precision": "3"
+  },
+  {
+   "fieldname": "tare_weight_kg",
+   "fieldtype": "Float",
+   "label": "Tare Weight (kg)",
+   "default": "0.500",
+   "precision": "3"
+  },
+  {
+   "fieldname": "net_weight_kg",
+   "fieldtype": "Float",
+   "label": "Net Weight (kg)",
+   "reqd": 1,
+   "precision": "3",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "length_meters",
+   "fieldtype": "Float",
+   "label": "Length (m)",
+   "reqd": 1,
+   "precision": "2",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "measured_gsm",
+   "fieldtype": "Float",
+   "label": "Measured GSM",
+   "precision": "2",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "cuttable_width_cm",
+   "fieldtype": "Float",
+   "label": "Cuttable Width (cm)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Warehouse & Storage"
+  },
+  {
+   "fieldname": "current_warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "rack_location",
+   "fieldtype": "Data",
+   "label": "Rack / Bin Location",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_loc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "genealogy_section",
+   "fieldtype": "Section Break",
+   "label": "Roll Genealogy"
+  },
+  {
+   "fieldname": "parent_roll_id",
+   "fieldtype": "Link",
+   "label": "Parent Roll",
+   "options": "Fabric Roll"
+  },
+  {
+   "fieldname": "root_roll_id",
+   "fieldtype": "Link",
+   "label": "Root Master Roll",
+   "options": "Fabric Roll"
+  },
+  {
+   "fieldname": "erpnext_serial_no",
+   "fieldtype": "Link",
+   "label": "ERPNext Serial No",
+   "options": "Serial No"
+  }
+ ],
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-11-05 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Fabric and Roll Control",
+ "name": "Fabric Roll",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "delete": 1,
+   "role": "System Manager"
+  }
+ ]
+}

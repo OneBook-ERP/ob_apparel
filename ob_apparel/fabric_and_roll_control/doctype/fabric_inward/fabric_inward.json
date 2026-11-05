@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "autoname": "FINW-.YYYY.-.#####",
+ "creation": "2026-11-05 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "supplier",
+  "mill_delivery_note",
+  "default_warehouse",
+  "column_break_finw",
+  "mill_invoiced_weight_kg",
+  "physical_scale_weight_kg",
+  "weight_variance_kg",
+  "weight_variance_percent",
+  "variance_status",
+  "rolls_section",
+  "rolls",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "default": "Today",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier / Mill",
+   "options": "Supplier",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "mill_delivery_note",
+   "fieldtype": "Data",
+   "label": "Mill Delivery Note / Challan",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "default_warehouse",
+   "fieldtype": "Link",
+   "label": "Receiving Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_finw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mill_invoiced_weight_kg",
+   "fieldtype": "Float",
+   "label": "Mill Invoiced Net Wt (kg)",
+   "reqd": 1,
+   "precision": "3",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "physical_scale_weight_kg",
+   "fieldtype": "Float",
+   "label": "Scale Weighbridge Wt (kg)",
+   "reqd": 1,
+   "precision": "3",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "weight_variance_kg",
+   "fieldtype": "Float",
+   "label": "Variance (kg)",
+   "read_only": 1,
+   "precision": "3"
+  },
+  {
+   "fieldname": "weight_variance_percent",
+   "fieldtype": "Percent",
+   "label": "Variance %",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "variance_status",
+   "fieldtype": "Select",
+   "label": "Tolerance Status",
+   "options": "Within Tolerance\nExcess Deviation Alert\nRejected",
+   "default": "Within Tolerance",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "rolls_section",
+   "fieldtype": "Section Break",
+   "label": "Inwarded Fabric Rolls"
+  },
+  {
+   "fieldname": "rolls",
+   "fieldtype": "Table",
+   "label": "Rolls",
+   "options": "Fabric Roll Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Fabric Inward",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "issingle": 0,
+ "istable": 0,
+ "modified": "2026-11-05 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Fabric and Roll Control",
+ "name": "Fabric Inward",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "submit": 1,
+   "cancel": 1,
+   "role": "System Manager"
+  }
+ ]
+}

@@ -16,7 +16,8 @@ add_to_apps_screen = [
 		"name": "ob_apparel",
 		"logo": "/assets/ob_apparel/images/logo.svg",
 		"title": "OneBook Apparel",
-		"route": "/app/textile-setup-and-masters",
+		"route": "/desk/textile-setup-and-masters",
+		"sequence_id": 2,
 	}
 ]
 

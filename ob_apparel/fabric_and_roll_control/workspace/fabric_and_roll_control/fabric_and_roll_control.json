@@ -1,0 +1,175 @@
+{
+ "app": "ob_apparel",
+ "charts": [],
+ "content": "[{\"id\": \"hd01\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Fabric & Roll Control</b></span>\", \"col\": 12}}, {\"id\": \"sc01\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fabric Inward\", \"col\": 3}}, {\"id\": \"sc02\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fabric Roll\", \"col\": 3}}, {\"id\": \"sc03\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fabric Transfer\", \"col\": 3}}, {\"id\": \"sc04\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Roll Transformation\", \"col\": 3}}, {\"id\": \"sp01\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"cd01\", \"type\": \"card\", \"data\": {\"card_name\": \"Fabric Inventory\", \"col\": 4}}, {\"id\": \"cd02\", \"type\": \"card\", \"data\": {\"card_name\": \"Floor Transactions\", \"col\": 4}}, {\"id\": \"cd03\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports & Audits\", \"col\": 4}}]",
+ "creation": "2026-11-05 10:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "package",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Fabric & Roll Control",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fabric Inventory",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fabric Item",
+   "link_count": 0,
+   "link_to": "Fabric Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fabric Lot",
+   "link_count": 0,
+   "link_to": "Fabric Lot",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fabric Roll",
+   "link_count": 0,
+   "link_to": "Fabric Roll",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Floor Transactions",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fabric Inward",
+   "link_count": 0,
+   "link_to": "Fabric Inward",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fabric Transfer",
+   "link_count": 0,
+   "link_to": "Fabric Transfer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fabric Roll Transformation",
+   "link_count": 0,
+   "link_to": "Fabric Roll Transformation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Roll Remnant",
+   "link_count": 0,
+   "link_to": "Roll Remnant",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports & Audits",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Fabric Roll Stock Ledger",
+   "link_count": 0,
+   "link_to": "Fabric Roll Stock Ledger",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Roll Weight vs Delivery Variance",
+   "link_count": 0,
+   "link_to": "Roll Weight vs Delivery Variance",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-11-05 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Fabric and Roll Control",
+ "name": "Fabric and Roll Control",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Fabric Inward",
+   "link_to": "Fabric Inward",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Fabric Roll",
+   "link_to": "Fabric Roll",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Fabric Transfer",
+   "link_to": "Fabric Transfer",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "Report",
+   "label": "Roll Stock Ledger",
+   "link_to": "Fabric Roll Stock Ledger",
+   "type": "Report"
+  }
+ ],
+ "title": "Fabric & Roll Control"
+}
