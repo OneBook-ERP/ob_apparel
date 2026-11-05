@@ -218,3 +218,4 @@ Every TM01 model must meet the criteria recorded in `Frappe_Textile_ERP_Master_D
 6. **Shade Master:** Pantone syntax validated; hex code rendered.
 7. **Shift Master:** Shift timing overlap prevented.
 8. **Gravitas Zero-Core:** Strictly zero modifications to `apps/frappe` or `apps/erpnext`.
+

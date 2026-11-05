@@ -85,3 +85,4 @@ Whenever Member A pushes code, Member B should log into Frappe Desk (`http://cam
 5. **Shift Master Overlap Test:**
    * Try creating two active shifts that overlap in time (e.g., Shift A 08:00-16:00 and Shift B 14:00-22:00 without split assignment).
    * *Expected Result:* System warns or rejects direct collision.
+
