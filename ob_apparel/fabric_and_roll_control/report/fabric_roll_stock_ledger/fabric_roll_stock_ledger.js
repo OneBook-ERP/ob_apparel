@@ -20,3 +20,4 @@ frappe.query_reports["Fabric Roll Stock Ledger"] = {
         }
     ]
 };
+
