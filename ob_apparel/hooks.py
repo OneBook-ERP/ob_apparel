@@ -11,15 +11,14 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "ob_apparel",
-# 		"logo": "/assets/ob_apparel/logo.png",
-# 		"title": "OneBook Apparel",
-# 		"route": "/ob_apparel",
-# 		"has_permission": "ob_apparel.api.permission.has_app_permission",
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "ob_apparel",
+		"logo": "/assets/ob_apparel/images/logo.svg",
+		"title": "OneBook Apparel",
+		"route": "/app/textile-setup-and-masters",
+	}
+]
 
 # The dock, the rail down the left of the desk, is a document rather than a hook. Author it in
 # Manage Dock on a developer-mode site and press Export to App, and it is written to

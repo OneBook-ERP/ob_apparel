@@ -1,0 +1,242 @@
+{
+ "app": "ob_apparel",
+ "charts": [],
+ "content": "[{\"id\": \"hd01\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Textile Setup & Masters</b></span>\", \"col\": 12}}, {\"id\": \"sc01\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Textile Settings\", \"col\": 3}}, {\"id\": \"sc02\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Yarn Count Master\", \"col\": 3}}, {\"id\": \"sc03\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fabric Construction\", \"col\": 3}}, {\"id\": \"sc04\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Readiness Audit\", \"col\": 3}}, {\"id\": \"sp01\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"cd01\", \"type\": \"card\", \"data\": {\"card_name\": \"Raw Materials\", \"col\": 4}}, {\"id\": \"cd02\", \"type\": \"card\", \"data\": {\"card_name\": \"Fabric Masters\", \"col\": 4}}, {\"id\": \"cd03\", \"type\": \"card\", \"data\": {\"card_name\": \"Operations & Machinery\", \"col\": 4}}, {\"id\": \"cd04\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports & Analytics\", \"col\": 4}}, {\"id\": \"cd05\", \"type\": \"card\", \"data\": {\"card_name\": \"System Setup\", \"col\": 4}}]",
+ "creation": "2026-11-04 10:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "shirt",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Textile Setup & Masters",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Raw Materials",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fibre Type",
+   "link_count": 0,
+   "link_to": "Fibre Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Yarn Count Master",
+   "link_count": 0,
+   "link_to": "Yarn Count Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Yarn Blend Master",
+   "link_count": 0,
+   "link_to": "Yarn Blend Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fabric Masters",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fabric Type",
+   "link_count": 0,
+   "link_to": "Fabric Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fabric Construction",
+   "link_count": 0,
+   "link_to": "Fabric Construction",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Shade Master",
+   "link_count": 0,
+   "link_to": "Shade Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Operations & Machinery",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Process Master",
+   "link_count": 0,
+   "link_to": "Process Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Machine Master",
+   "link_count": 0,
+   "link_to": "Machine Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports & Analytics",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Textile Setup Readiness Audit",
+   "link_count": 0,
+   "link_to": "Textile Setup Readiness Audit",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Yarn Count Converter Matrix",
+   "link_count": 0,
+   "link_to": "Yarn Count Converter Matrix",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "System Setup",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Textile Settings",
+   "link_count": 0,
+   "link_to": "Textile Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Shift Master",
+   "link_count": 0,
+   "link_to": "Shift Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Textile UOM",
+   "link_count": 0,
+   "link_to": "Textile UOM",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Textile Role",
+   "link_count": 0,
+   "link_to": "Textile Role",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-11-04 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Textile Setup and Masters",
+ "name": "Textile Setup and Masters",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Textile Settings",
+   "link_to": "Textile Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Yarn Count Master",
+   "link_to": "Yarn Count Master",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Fabric Construction",
+   "link_to": "Fabric Construction",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "Report",
+   "label": "Readiness Audit",
+   "link_to": "Textile Setup Readiness Audit",
+   "type": "Report"
+  }
+ ],
+ "title": "Textile Setup & Masters"
+}
+
